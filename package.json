@@ -1,0 +1,19 @@
+{
+  "name": "chat-web-app",
+  "version": "1.0.0",
+  "description": "WhatsApp Clone(Basic) for educational purpose.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UtkarshShrivastava1/Chat-Web-App.git"
+  },
+  "author": "Utkarsh Shrivastava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UtkarshShrivastava1/Chat-Web-App/issues"
+  },
+  "homepage": "https://github.com/UtkarshShrivastava1/Chat-Web-App#readme"
+}
