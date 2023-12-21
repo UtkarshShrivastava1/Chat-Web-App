@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/UtkarshShrivastava1/Chat-Web-App/issues"
   },
-  "homepage": "https://github.com/UtkarshShrivastava1/Chat-Web-App#readme"
+  "homepage": "https://github.com/UtkarshShrivastava1/Chat-Web-App#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
