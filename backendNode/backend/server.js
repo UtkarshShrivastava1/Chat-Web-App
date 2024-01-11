@@ -1,6 +1,7 @@
+// backend/server.js
 const express = require("express");
-const dummyData = require("./dummydata/dummydata"); // Fix the require statement
-const { config: configDotenv } = require("dotenv"); // Fix the require statement
+const dummyData = require("./dummydata/dummydata");
+const { config: configDotenv } = require("dotenv");
 
 configDotenv(); // Invoke configDotenv to load environment variables
 
@@ -10,10 +11,14 @@ const app = express();
 app.get("/", (req, res) => {
   res.send("API is running");
 });
+app.get("/api/chat", (req, res) => {
+  console.log(req.params.id);
+  res.send(dummyData);
+});
 
 app.get("/api/chat/:id", (req, res) => {
   console.log(req.params.id);
-  const data = dummyData.find((c) => c.id === req.params.id); // Fix the find function
+  const data = dummyData.find((c) => c.id === req.params.id);
   if (data) {
     res.json(data);
   } else {
