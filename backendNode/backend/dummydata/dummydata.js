@@ -26,7 +26,7 @@ const dummyData = [
         email: "bobs@example.com",
       },
     ],
-    id: "another_unique_id_1",
+    id: "617a077e18c25468bc7c4dd5",
     chatName: "Alice and Bob",
   },
   {
@@ -45,7 +45,7 @@ const dummyData = [
         email: "charlie@example.com",
       },
     ],
-    id: "another_unique_id_2",
+    id: "617a077e18c25468bc7c4dd6",
     chatName: "Group Chat",
   },
   // Add 7 more chat objects with your dummy data
