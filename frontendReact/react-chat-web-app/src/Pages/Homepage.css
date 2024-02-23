@@ -1,0 +1,43 @@
+/* Apply styles to the container */
+.Container {
+  max-width: 600px; /* Adjust the max width as needed */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add some padding */
+}
+
+/* Style the heading */
+.Text {
+  font-size: 2rem; /* Adjust the font size */
+  font-family: "Work Sans", sans-serif; /* Use the Work Sans font */
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Add some space below the text */
+}
+
+/* Style the tab list */
+.TabList {
+  display: flex; /* Arrange tabs in a row */
+  justify-content: center; /* Center the tabs */
+  margin-bottom: 1em; /* Add space below the tab list */
+}
+
+/* Style individual tabs */
+.Tab {
+  padding: 10px 20px; /* Add padding */
+  margin: 0 10px; /* Add space between tabs */
+  cursor: pointer; /* Change cursor to pointer */
+  border: 1px solid transparent; /* Add border */
+  border-radius: 4px; /* Add border radius */
+}
+
+/* Style active tab */
+.Tab[aria-selected="true"] {
+  background-color: #edf2f7; /* Change background color */
+}
+
+/* Style tab panel container */
+.TabPanels {
+  background-color: #f7fafc; /* Change background color */
+  padding: 20px; /* Add padding */
+  border: 1px solid #e2e8f0; /* Add border */
+  border-radius: 4px; /* Add border radius */
+}
