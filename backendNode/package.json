@@ -4,8 +4,8 @@
   "description": "Built with React, Node.js with Express.js, Socket.IO, and MongoDB for seamless communication. Features user registration, secure login, and interactive chat. Delivering a cutting-edge, scalable, and user-friendly platform for instant and dynamic conversations.",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon ./backend/server.js",
-    "server": "nodemon backend/server.js",
+    "start": "node ./backend/server.js",
+    "server": "nodemon ./backend/server.js",
     "build": "npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
   },
   "repository": {
