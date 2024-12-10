@@ -27,6 +27,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^5.12.9",
     "nodemon": "^2.0.7",
+    "react-chat-app-backendnode": "file:",
     "socket.io": "^4.1.2"
   }
 }
