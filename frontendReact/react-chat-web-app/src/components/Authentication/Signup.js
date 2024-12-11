@@ -52,7 +52,7 @@ const Signup = () => {
         },
       };
       const { data } = await axios.post(
-        "https://chat-web-app-djw1.onrender.com/api/user",
+        "${process.env.REACT_APP_BACKEND_URL}/api/user",
         {
           name,
           email,
