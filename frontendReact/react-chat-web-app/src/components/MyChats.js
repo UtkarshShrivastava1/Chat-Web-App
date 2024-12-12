@@ -35,7 +35,8 @@ const MyChats = ({ fetchAgain }) => {
       };
 
       const { data } = await axios.get(
-        "${process.env.REACT_APP_BACKEND_URL}/api/chat",
+        //"${process.env.REACT_APP_BACKEND_URL}/api/chat",
+        `/api/chat`,
         config
       );
       setChats(data);
