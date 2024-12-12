@@ -15,7 +15,7 @@ import animationData from "../animations/typing.json";
 import io from "socket.io-client";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
 import { ChatState } from "../Context/ChatProvider";
-const ENDPOINT = process.env.REACT_APP_BACKEND_URL;
+const ENDPOINT = "https://chat-web-app-djw1.onrender.com";
 
 var socket, selectedChatCompare;
 
@@ -52,7 +52,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       setLoading(true);
 
       const { data } = await axios.get(
-        `${process.env.REACT_APP_BACKEND_URL}/api/message/${selectedChat._id}`,
+        `https://chat-web-app-djw1.onrender.com/api/message/${selectedChat._id}`,
         config
       );
       setMessages(data);
@@ -83,7 +83,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         };
         setNewMessage("");
         const { data } = await axios.post(
-          "${process.env.REACT_APP_BACKEND_URL}/api/message",
+          "https://chat-web-app-djw1.onrender.com/api/message",
           {
             content: newMessage,
             chatId: selectedChat,

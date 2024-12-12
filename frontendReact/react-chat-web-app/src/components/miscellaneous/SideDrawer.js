@@ -79,7 +79,7 @@ function SideDrawer() {
       };
 
       const { data } = await axios.get(
-        `${process.env.REACT_APP_BACKEND_URL}/api/user?search=${search}`,
+        `https://chat-web-app-djw1.onrender.com/api/user?search=${search}`,
         config
       );
       console.log("Search result:", data); // Add this line
@@ -109,7 +109,7 @@ function SideDrawer() {
         },
       };
       const { data } = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/api/chat`,
+        `https://chat-web-app-djw1.onrender.com/api/chat`,
         { userId },
         config
       );

@@ -59,7 +59,7 @@ const GroupChatModal = ({ children }) => {
         },
       };
       const { data } = await axios.get(
-        `${process.env.REACT_APP_BACKEND_URL}/api/user?search=${search}`,
+        `https://chat-web-app-djw1.onrender.com/api/user?search=${search}`,
         config
       );
       console.log(data);
@@ -100,7 +100,7 @@ const GroupChatModal = ({ children }) => {
         },
       };
       const { data } = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/api/chat/group`,
+        `https://chat-web-app-djw1.onrender.com/api/chat/group`,
         {
           name: groupChatName,
           users: JSON.stringify(selectedUsers.map((u) => u._id)),
