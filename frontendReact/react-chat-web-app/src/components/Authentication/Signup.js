@@ -52,7 +52,8 @@ const Signup = () => {
         },
       };
       const { data } = await axios.post(
-        "${process.env.REACT_APP_BACKEND_URL}/api/user",
+        // "${process.env.REACT_APP_BACKEND_URL}/api/user",
+        "/api/user",
         {
           name,
           email,

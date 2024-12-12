@@ -59,7 +59,8 @@ const GroupChatModal = ({ children }) => {
         },
       };
       const { data } = await axios.get(
-        `${process.env.REACT_APP_BACKEND_URL}/api/user?search=${search}`,
+        // `${process.env.REACT_APP_BACKEND_URL}/api/user?search=${search}`,
+        "/api/user?search=${search}",
         config
       );
       console.log(data);
